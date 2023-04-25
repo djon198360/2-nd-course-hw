@@ -1,80 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css?85">
-    <title>Играй до безумия</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css?85">
+        <title>Играй до безумия</title>
+    </head>
 
-<body>
-    <header class="header center">
-        <div class="header__top">
-            <h1 class="header__top_title">Добро пожаловать на мой сайт !</h1>
-            <p class="header__top_text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span>поехали</span> и
-                <span>приступай</span></p>
-            <button onclick="location.href='#Game';" class="header__top_button">Поехали!</button>
+    <body>
+        <header class="header center">
+            <div class="header__top">
+                <h1 class="header__top_title">Добро пожаловать на мой сайт !</h1>
+                <p class="header__top_text">Вам предстоит пройти несколько
+                    увлекательных игр. Если готов нажимай <span>поехали</span> и
+                    <span>приступай</span></p>
+                <button onclick="location.href='#Game';"
+                    class="header__top_button">Поехали!</button>
 
-        </div>
-    </header>
-    <main class="main center" id="Game">
-        <div class="main__content">
-            <a href="#Game_1" class="main__content_item item_1">Времена года!</a>
-            <a href="#Game_2" class="main__content_item item_2">Запомни слова</a>
-            <a href="#Game_3" class="main__content_item item_3">Игра в загадки</a>
-
-        </div>
-    </main>
-
-    <footer class="footer center">
-        <div class="footer__top" id="Game_1">
-            <div class="footer__top_left">
-                <h2 class="footer__top_title h2">Времена года!</h2>
-                <p>Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он
-                    относится</p>
-                <button onclick="season();" class="footer__button">Играть</button>
             </div>
-            <div class="footer__top_right">
-                <a href="#" class="footer__top_a">
-                    <img class="footer__top_img" src="./img/undraw_video_game_night.png" alt="">
-                </a>
-            </div>
-        </div>
+        </header>
+        <main class="main center" id="Game">
+            <div class="main__content">
+                <a href="#Game_1" class="main__content_item item_1">Времена
+                    года!</a>
+                <a href="#Game_2" class="main__content_item item_2">Запомни
+                    слова</a>
+                <a href="#Game_3" class="main__content_item item_3">Игра в
+                    загадки</a>
 
-        <div class="footer__bottom" id="Game_2">
-            <div class="div footer__bottom_left">
-                <a href="#" class="footer__top_a">
-                    <img class="footer__top_img" src="./img/undraw_gaming_re_cma2.png" alt="">
-                </a>
             </div>
-            <div class="div footer__bottom_right">
-                <h2 class="footer__bottom_title h2">Запомни слова</h2>
-                <p>При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-                <button onclick="gameStart();" class="footer__button">Играть</button>
+        </main>
+
+        <footer class="footer center">
+            <div class="footer__top" id="Game_1">
+                <div class="footer__top_left">
+                    <h2 class="footer__top_title h2">Времена года!</h2>
+                    <p>Нажмите кнопку играть, введите номер месяца (от 1 до 12)
+                        и вы узнаете к какому времени года он
+                        относится</p>
+                    <button onclick="season();" class="footer__button">Играть</button>
+                </div>
+                <div class="footer__top_right">
+                    <a href="#" class="footer__top_a">
+                        <img class="footer__top_img"
+                            src="./img/undraw_video_game_night.png" alt="">
+                    </a>
+                </div>
             </div>
 
+            <div class="footer__bottom" id="Game_2">
+                <div class="div footer__bottom_left">
+                    <a href="#" class="footer__top_a">
+                        <img class="footer__top_img"
+                            src="./img/undraw_gaming_re_cma2.png" alt="">
+                    </a>
+                </div>
+                <div class="div footer__bottom_right">
+                    <h2 class="footer__bottom_title h2">Запомни слова</h2>
+                    <p>При нажатии на кнопку играть, вы увидите несколько слов,
+                        которые вам необходимо запомнить.</p>
+                    <button onclick="gameStart();" class="footer__button">Играть</button>
+                </div>
+
+            </div>
+
+        </footer>
+        <div class="footer__game" id="Game_3">
+            <div class="footer__game_content center">
+                <h2 class="footer__bottom_title h2">Игра в загадки</h2>
+                <p>Компьютер загадывает загадку, вам необходимо ее угадать, если
+                    вы дадите не правильный ответ, то компьютер
+                    даст вам
+                    подсказку. У вас будет три попытки и две подсказки.</p>
+                <button onclick="startGame();" class="footer__button">Играть!</button>
+            </div>
         </div>
 
-    </footer>
-    <div class="footer__game" id="Game_3">
-        <div class="footer__game_content center">
-            <h2 class="footer__bottom_title h2">Игра в загадки</h2>
-            <p>Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер
-                даст вам
-                подсказку. У вас будет три попытки и две подсказки.</p>
-            <button onclick="startGame();" class="footer__button">Играть!</button>
+        <div class="copyright">
+            <p>Все права защищены</p>
         </div>
-    </div>
 
-    <div class="copyright">
-        <p>Все права защищены</p>
-    </div>
+        <script src="./test.js?9"></script>
 
-    <script src="./test.js?9"></script>
-	
 
-</body>
+    </body>
 
 </html>
