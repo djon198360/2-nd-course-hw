@@ -8,10 +8,12 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Montserrat", sans-serif;
     background: #000915;
 }
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -105,9 +107,11 @@ body {
             &.item_1 {
                 background-image: url(../img/game_1.jpg);
             }
+
             &.item_2 {
                 background-image: url(../img/game_2.jpg);
             }
+
             &.item_3 {
                 background-image: url(../img/game_3.jpg);
             }
@@ -131,6 +135,7 @@ p {
 
     color: #ffffff;
 }
+
 .footer {
     &__button {
         background: #9c0332;
@@ -139,6 +144,7 @@ p {
         transition: 0.2s;
         margin-bottom: 64px;
         color: #fff;
+
         &:hover {
             transform: scale(1.05);
         }
@@ -186,7 +192,8 @@ p {
 
     &__game {
         height: 800px;
-        background-image: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),url(../img/back_game_3.jpg);
+        background-image: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%),
+            linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../img/back_game_3.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
